@@ -35,7 +35,7 @@ exports.signup = async(req, res, next) =>
     else
     {
         authenService.register(req.body);
-        res.redirect("account/logIn");
+        res.redirect("auth/logIn");
     }
     
 }
